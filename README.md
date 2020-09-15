@@ -13,7 +13,7 @@ $ yum remove PackageKit*
 
 ```
 
-#### [ Desabilitar el procesos de Evolution ]
+#### [ Desabilitar el proceso de Evolution ]
 
 ```sh
 
