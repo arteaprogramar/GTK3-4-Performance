@@ -60,16 +60,16 @@ exclude=evolution*
 #### [ Contacto ]
 
 [ #Twitter ]
-➡ https://www.twitter.com/arteaprogramar
+* https://www.twitter.com/arteaprogramar
 
 [ #Facebook ]
-➡ https://www.fb.com/arteaprogramar
+* https://www.fb.com/arteaprogramar
 
 [ #Instagram ]
-➡ https://www.instagram.com/arteaprogramar
+* https://www.instagram.com/arteaprogramar
 
 [ #GitHub ]
-➡ https://www.github.com/arteaprogramar
+* https://www.github.com/arteaprogramar
 
 [ #PlayStore Perfil ]
-➡ https://play.google.com/store/apps/dev?id=8045357588448663731
+* https://play.google.com/store/apps/dev?id=8045357588448663731
