@@ -1,4 +1,4 @@
-### Instrucciones de Optimización
+## Instrucciones de Optimización
 
 Estas instrucciones deben realizarse en modo ROOT
 
