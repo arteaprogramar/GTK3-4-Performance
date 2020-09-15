@@ -4,11 +4,12 @@ Estas instrucciones deben realizarse en modo ROOT
 
 [ Eliminar Gnome-Software de Fedora / CentOs ]
 
-➡ $ systemctl status packagekit
-➡ $ systemctl stop packagekit
-➡ $ systemctl mask packagekit
-➡ $ yum remove PackageKit*
-
+´´´
+$ systemctl status packagekit
+$ systemctl stop packagekit
+$ systemctl mask packagekit
+$ yum remove PackageKit*
+´´´
 
 [ Desabilitar el procesos de Evolution ]
 
