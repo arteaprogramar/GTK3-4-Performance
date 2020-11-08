@@ -47,6 +47,8 @@ exclude=evolution*
 ➡ $ echo "Hidden=true" >> /etc/xdg/autostart/tracker-extract.desktop
 ➡ $ echo "Hidden=true" >> /etc/xdg/autostart/tracker-miner-apps.desktop
 ➡ $ echo "Hidden=true" >> /etc/xdg/autostart/tracker-miner-fs.desktop
+➡ $ echo "Hidden=true" >> /etc/xdg/autostart/tracker-miner-fs-3.desktop
+➡ $ echo "Hidden=true" >> /etc/xdg/autostart/tracker-miner-rss-3.desktop
 ➡ $ echo "Hidden=true" >> /etc/xdg/autostart/tracker-miner-user-guides.desktop
 ➡ $ echo "Hidden=true" >> /etc/xdg/autostart/tracker-store.desktop
 
