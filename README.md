@@ -56,6 +56,7 @@ exclude=evolution*
 ➡ $ dbus-launch --exit-with-session gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
 ➡ $ yes | LANG=C tracker reset --hard
 ➡ $ sed -i 's/X-GNOME-Autostart-enabled=.*/X-Gnome-Autostart-enabled=false/' /etc/xdg/autostart/tracker-store.desktop
+➡ $ mv /usr/libexec/tracker-miner-fs-3 /usr/libexec/tracker-miner-fs-3-disable
 
 ```
 
