@@ -6,10 +6,11 @@ Estas instrucciones deben realizarse en modo ROOT
 
 ```sh
 
-$ systemctl status packagekit
-$ systemctl stop packagekit
-$ systemctl mask packagekit
-$ yum remove PackageKit*
+➡ $ systemctl status packagekit
+➡ $ systemctl stop packagekit
+➡ $ systemctl mask packagekit
+➡ $ yum remove PackageKit*
+➡ $ mv /usr/libexec/tracker-miner-fs-3 /usr/libexec/tracker-miner-fs-3-disable
 
 ```
 
@@ -56,7 +57,24 @@ exclude=evolution*
 ➡ $ dbus-launch --exit-with-session gsettings set org.freedesktop.Tracker.Miner.Files enable-monitors false
 ➡ $ yes | LANG=C tracker reset --hard
 ➡ $ sed -i 's/X-GNOME-Autostart-enabled=.*/X-Gnome-Autostart-enabled=false/' /etc/xdg/autostart/tracker-store.desktop
-➡ $ mv /usr/libexec/tracker-miner-fs-3 /usr/libexec/tracker-miner-fs-3-disable
+
+```
+
+#### [ Disable plymouth boot ]
+
+```sh
+➡ $ sudo dnf remove plymouth*
+
+## Edit /etc/default/grub with nano and REMOVE "rhgb" from GRUB_CMDLINE_LINUX="rhgb quiet"
+➡ $ sudo nano /etc/default/grub
+
+## Edit /etc/default/grub
+GRUB_CMDLINE_LINUX="rhgb quiet"
+## to
+GRUB_CMDLINE_LINUX="quiet"
+
+## And rebuild GRUB
+➡ $ sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 
 ```
 
