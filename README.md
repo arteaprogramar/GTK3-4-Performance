@@ -2,7 +2,7 @@
 
 Estas instrucciones deben realizarse en modo ROOT
 
-#### [ Eliminar Gnome-Software de Fedora / CentOs ]
+#### [ Remove Gnome-Software de Fedora / CentOs ]
 
 ```sh
 
@@ -14,15 +14,16 @@ Estas instrucciones deben realizarse en modo ROOT
 
 ```
 
-#### [ Desabilitar el proceso de Evolution ]
+#### [ Disable Evolution process ]
 
 ```sh
 
-$ mv /usr/lib64/evolution-data-server/ /usr/lib64/evolution-data-server-disable
+➡ $ echo "Hidden=true" >> /etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop
+➡ $ mv /usr/lib64/evolution-data-server/ /usr/lib64/evolution-data-server-disable
 
 ```
 
-#### [ Evitar que evolution se actualice (Modificar DNF o YUM)]
+### [ Prevent Evolution updating (Modify DNF o YUM) ]
 
 ```sh
 
@@ -31,13 +32,29 @@ $ mv /usr/lib64/evolution-data-server/ /usr/lib64/evolution-data-server-disable
 
 ``` 
 
-[ Agregar al archivo .conf ]
+[ Add to dnf.conf  or yum.conf ]
 
 ```sh
 
 ....
 exclude=evolution*
 ...
+
+```
+
+#### [ Autostart disable ]
+
+```sh
+
+## If you don't need Remote Access
+➡ $ echo "Hidden=true" >> /etc/xdg/autostart/org.gnome.SettingsDaemon.Sharing.desktop
+
+## If you do not require the use of SmartCard
+➡ $ echo "Hidden=true" >> /etc/xdg/autostart/org.gnome.SettingsDaemon.Smartcard.desktop
+
+## If you do not require the use of SIM / Modem cards
+➡ $ echo "Hidden=true" >> /etc/xdg/autostart/org.gnome.SettingsDaemon.Wwan.desktop
+
 
 ```
 
